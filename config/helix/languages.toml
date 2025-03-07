@@ -1,0 +1,17 @@
+[language-server.pyright]
+command = "pyright-langserver"
+args = ["--stdio"]
+
+[language-server.pyright.config]
+stubPath = "/home/hukumka/src/third-party/python-type-stubs/stubs/"
+
+[language-server.rust-analyzer]
+timeout = 60
+
+[language-server.rust-analyzer.config]
+check.command = "clippy"
+
+[[language]]
+name = "python"
+language-servers = ["pyright"]
+
