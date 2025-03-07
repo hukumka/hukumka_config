@@ -24,7 +24,7 @@ install_config () {
 
   echo "Installing ${name} configuration into ~/.config/${1}"
   mkdir -p ~/.config/
-  cp -r ./config/${1} ~/.config/${1}
+  cp -r ./config/${1} ~/.config/
 
 }
 
