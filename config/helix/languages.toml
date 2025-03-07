@@ -3,7 +3,7 @@ command = "pyright-langserver"
 args = ["--stdio"]
 
 [language-server.pyright.config]
-stubPath = "/home/hukumka/src/third-party/python-type-stubs/stubs/"
+stubPath = "${HOME}/src/third-party/python-type-stubs/stubs/"
 
 [language-server.rust-analyzer]
 timeout = 60
