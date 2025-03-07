@@ -25,6 +25,14 @@ install_config () {
   echo "Installing ${name} configuration into ~/.config/${1}"
   mkdir -p ~/.config/
   cp -r ./config/${1} ~/.config/${1}
+
+}
+
+install_helix () {
+  install_config "helix" "Helix editor"
+  
+  mkdir -p ~/.local/share/helix/  # Copy python stub files for pylance
+  cp -r ./src/third-party/python-type-stubs/stubs/ ~/.local/share/helix/pyright-stubs
   echo "Done."
 }
 
@@ -36,7 +44,7 @@ fi
 while [[ $# -gt 0 ]]; do
   case $1 in
     helix)
-      install_config "helix" "Helix editor"
+      install_helix
     ;;
     anyrun)
       install_config "anyrun"
