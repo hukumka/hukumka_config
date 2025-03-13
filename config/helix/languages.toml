@@ -1,9 +1,15 @@
-[language-server.pyright]
-command = "pyright-langserver"
+[language-server.basedpyright]
+command = "basedpyright-langserver"
 args = ["--stdio"]
 
-[language-server.pyright.config]
-stubPath = "${HOME}/.local/share/helix/pyright-stubs"
+[language-server.basedpyright.config]
+basedpyright.analysis.stubPath = "${HOME}/.local/share/helix/pyright-stubs/"
+basedpyright.analysis.typeCheckingMode = "standard"
+basedpyright.analysis.autoImportCompletion = false
+
+[language-server.ruff]
+command = "ruff"
+args = ["server", "-q", "--preview"]
 
 [language-server.rust-analyzer]
 timeout = 60
@@ -13,5 +19,5 @@ check.command = "clippy"
 
 [[language]]
 name = "python"
-language-servers = ["pyright"]
+language-servers = ["basedpyright", "ruff"]
 
