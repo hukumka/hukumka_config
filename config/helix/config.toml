@@ -1,0 +1,21 @@
+theme = "dark_plus"
+
+[editor]
+line-number = "relative"
+idle-timeout = 300
+soft-wrap.enable = true
+
+[editor.file-picker]
+hidden = false
+
+[editor.lsp]
+display-messages = true
+display-inlay-hints = true
+
+[editor.indent-guides]
+render = true
+character = "▏" # Some characters that work well: "▏", "┆", "┊", "⸽"
+skip-levels = 2
+
+[editor.terminal]
+command = "zellij"
