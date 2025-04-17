@@ -1,0 +1,6 @@
+[general]
+import = ["~/.config/alacritty/rose-pine.toml"]
+
+[font.normal]
+family = "JetBrains Mono"
+style = "Regular"
