@@ -8,7 +8,7 @@ command = "typos-lsp"
 [language-server.basedpyright.config]
 basedpyright.analysis.stubPath = "${HOME}/.local/share/helix/pyright-stubs/"
 basedpyright.analysis.typeCheckingMode = "standard"
-basedpyright.analysis.autoImportCompletion = false
+basedpyright.analysis.autoImportCompletions = false
 
 [language-server.ruff]
 command = "ruff"
